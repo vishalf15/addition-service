@@ -6,4 +6,3 @@ files:
 hooks:
   ApplicationStart:
     - location: scripts/run-addition-service.sh
-      runas: root
