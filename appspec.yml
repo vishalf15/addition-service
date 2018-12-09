@@ -3,6 +3,12 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/apps/addition-service
+  - source: target/addition-service-1.0.0.jar
+    destination: /home/ec2-user/apps/addition-service/
+  - source: scripts/change-to-exe-prvillages.sh
+    destination: /home/ec2-user/apps/addition-service/scripts
+  - source: scripts/run-addition-service.sh
+    destination: /home/ec2-user/apps/addition-service/scripts    
 hooks:
   AfterInstall:
     - location: scripts/change-to-exe-prvillages.sh
