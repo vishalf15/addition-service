@@ -1,10 +1,7 @@
 #!/bin/bash
-echo 'current path = '
-pwd
-echo 'List of files = '
-ls
 echo 'Starting Spring Boot app'
 cd '/home/ec2-user/apps/addition-service'
+mvn install
 echo 'new current path = '
 pwd
 echo 'List of files = '
