@@ -4,6 +4,9 @@ files:
   - source: /
     destination: /home/ec2-user/apps/addition-service
 hooks:
+  AfterInstall:
+    - location: scripts/change-to-exe-prvillages.sh
+      runas: root
   ApplicationStart:
     - location: scripts/run-addition-service.sh
       runas: root
