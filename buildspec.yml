@@ -16,4 +16,4 @@ phases:
       - echo Build completed
 artifacts:
   files:
-    - target/addition-service-1.0.0.jar
+    - addition-service-1.0.0.jar
