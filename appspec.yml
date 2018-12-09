@@ -2,8 +2,8 @@ version: 0.0
 os: linux
 files:
   - source: ./
-    destination: /home/ec2-user/apps/addition-service    
+    destination: /home/ec2-user/apps/addition-service
 hooks:
   ApplicationStart:
-    - location: scripts/run-addition-service.sh
+    - location: run-addition-service.sh
       runas: root
