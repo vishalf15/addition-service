@@ -1,2 +1,4 @@
 #!/bin/bash
 echo 'Upgrading privilages to executable'
+cd '/home/ec2-user/apps/addition-service'
+java -jar addition-service-1.0.0.jar
