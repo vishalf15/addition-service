@@ -1,8 +1,6 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /home/ec2-user/apps/addition-service
   - source: target/addition-service-1.0.0.jar
     destination: /home/ec2-user/apps/addition-service/
   - source: scripts/change-to-exe-prvillages.sh
