@@ -2,15 +2,8 @@ version: 0.0
 os: linux
 files:
   - source: target/addition-service-1.0.0.jar
-    destination: /home/ec2-user/apps/addition-service/
-  - source: scripts/change-to-exe-prvillages.sh
-    destination: /home/ec2-user/apps/addition-service/scripts
-  - source: scripts/run-addition-service.sh
-    destination: /home/ec2-user/apps/addition-service/scripts    
+    destination: /home/ec2-user/apps/addition-service/    
 hooks:
   AfterInstall:
     - location: scripts/change-to-exe-prvillages.sh
-      runas: root
-  ApplicationStart:
-    - location: scripts/run-addition-service.sh
       runas: root
