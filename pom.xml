@@ -50,6 +50,7 @@
 				<configuration>
 					<executable>true</executable>
 					<outputDirectory>.</outputDirectory>
+					<mainClass>com.add.AdditionServiceApplication</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>
